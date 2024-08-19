@@ -2,10 +2,11 @@ import requests
 from datetime import datetime
 import smtplib
 from app_password import PASSWORD
+# The password above you need to generate for your gmail account or any other provider, form app password section
 
 MY_LAT = 27.664400
 MY_LONG = 85.318794
-MY_EMAIL = "pramishkc066@gmail.com"
+MY_EMAIL = "pramishkc066@gmail.com" # your email
 
 response = requests.get(url="http://api.open-notify.org/iss-now.json")
 response.raise_for_status()
